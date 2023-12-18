@@ -1,0 +1,25 @@
+// main.scss
+
+@import "base/variables";
+@import "components/buttons";
+@import "components/cards";
+@import "layout/header";
+@import "layout/main-content";
+@import "layout/sidebar";
+@import "layout/footer";
+
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+// Importo estilos para cáda página html
+
+@import "views/home";
+@import "views/catalog";
+@import "views/register";
+
+// Estilos generales
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font-family;
+  }

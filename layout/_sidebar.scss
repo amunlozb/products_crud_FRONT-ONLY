@@ -1,0 +1,6 @@
+// _sidebar.scss
+
+body aside#sidebar {
+    grid-area: sidebar; 
+    background-color: $sidebar-background-color; 
+  }

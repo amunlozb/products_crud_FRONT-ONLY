@@ -1,0 +1,53 @@
+// _cards.scss
+
+.product-card {
+  width: 280px;
+  border: 1px solid #ebebeb;
+  padding: 13px;
+  margin-bottom: 30px;
+  border-radius: 25px;
+  position: relative;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+  transition: box-shadow 0.2s;
+  background-color: white;
+
+  &:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+  }
+
+  img {
+    width: 100%;
+    border-radius: 25px;
+  }
+
+  span {
+    color: #969696;
+    font-weight: 500;
+    line-height: 30px;
+  }
+
+  h4 {
+    font-size: 18px;
+    color: rgb(41, 41, 41);
+  }
+
+  .stars {
+    color: #e6ae2c;
+    padding: 6px 0;
+  }
+
+  .price {
+    color: #088178;
+    padding: 4px 0;
+  }
+
+  .buy-icon {
+    color: #088178;
+    background-color: #c7e9e75e;
+    padding: 15px;
+    border-radius: 50px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+  }
+}

@@ -1,0 +1,160 @@
+// _catalog.scss
+
+// @import "../layout/sidebar";
+
+
+@media only screen and (max-width: 600px) {
+  html body.catalog {
+    // oculto sidebar en pantallas pequeñas
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
+
+    .product-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 50%;
+
+      p {
+        font-size: $font-size-min-p;
+      }
+
+      .catalog-header {
+        width: 55%;
+        border-radius: 25px;
+        margin: 20px 80px;
+      }
+
+      .cards-section {
+        justify-content: start;
+        margin: 0 60px;
+      }
+    }
+    
+  }
+}
+
+
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  html body.catalog {
+
+    grid-template-columns: 1fr 4fr;
+    
+    #sidebar .filter-section {
+      .category-filter, .price-filter, .ratings-filter {
+        margin-left: -10px;
+      }
+    }
+    
+    // solo dos columnas de productos
+    .product-section 
+
+    .catalog-header {
+      border-radius: 15px;
+    }
+
+
+    .cards-section {
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .product-card {
+      width: 268px;    
+    }
+
+    header {
+      width: 130%;
+    }
+
+    #footer {
+      gap: 15px;
+    }
+  }
+}
+
+body.catalog {
+  display: grid;
+  grid-template-columns: 1fr 7fr;
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer";
+
+  background-color: $background-color;
+
+  // añado € al final de cada precio
+  .product-card h4.price::after {
+    content: "€";
+  }
+
+    .filter-section {
+      display: flex;
+      flex-direction: column;
+      margin: 2rem;
+      gap: 1rem;
+
+      input[type=radio] {
+        margin-right: 10px;
+      }
+
+      input[type=range] {
+        width: 80%;
+      }
+
+      .category-filter {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      .price-filter {
+        display: flex;
+        flex-direction: column;
+
+        span {
+          font-weight: bold;
+          color: $primary-color;
+          margin-top: 0.2rem;
+        }
+      }
+
+      .ratings-filter {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+    }
+
+    .product-section 
+    
+    .catalog-header {
+      background-color: $catalog-header-color;
+      margin: 20px 60px;
+      border-radius: 50px;
+      padding: 5px;
+
+      h1 {
+        margin-top: 15px;
+      }
+    }
+    
+    .cards-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 20px 60px;
+      padding: 20px;
+      gap: 20px;
+      background-color: $background-color;
+    }
+    .product-section h1,
+    .product-section p {
+      text-align: center;
+    }
+    
+}

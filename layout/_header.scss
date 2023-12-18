@@ -1,0 +1,106 @@
+// _header.scss
+@media only screen and (max-width: 768px) {
+  body.catalog header {
+    width: 95%;
+  }
+
+  body.home header {
+    width: 95%;
+  }
+
+  body.register header {
+    width: 95%;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  body.home header, body.catalog header, body.register header {
+    width: 115%;
+  }
+}
+
+header {
+    width: 100%;
+    grid-area: header;
+    background-color: white;
+  }
+
+.header-logo {
+    width: 75px; /* Remove the fixed width */
+    height: auto;
+    margin-right: 50px;
+  }
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0;
+  }
+  
+.header-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+.header-logo img {
+    max-width: 100%; /* Ensures the logo scales within its container */
+  }
+  
+.header-list-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+.header-list-nav ul li {
+    margin-right: 20px; /* Adjust spacing between menu items as needed */
+  }
+
+  .header-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .header-list-nav ul {
+    display: flex;
+  }
+  .header-list-nav ul li {
+    list-style-type: none;
+    padding: 0 20px;
+    position: relative;
+  }
+  .header-list-nav ul a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+  }
+  .header-list-nav ul a:hover,
+  .header-list-nav ul a.active {
+    color: #088178;
+    content: "";
+  }
+  .header-list-icon a {
+    color: #1a1a1a;
+    padding-left: 20px;
+    transition: 0.3s ease;
+  }
+  .header-list-icon a:hover,
+  .header-list-nav ul a.active {
+    color: #088178;
+  }
+  .header-list-nav ul li a:hover::after,
+  .header-list-nav ul li a.active::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+  }

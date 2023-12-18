@@ -1,0 +1,16 @@
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+
+  body.home #hero, body.home #off-banner, body.home #features {
+    width: 92%;
+  }
+}
+
+
+body.home {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "main"
+      "footer";
+  }
