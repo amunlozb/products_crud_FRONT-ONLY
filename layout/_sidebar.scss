@@ -3,4 +3,25 @@
 body aside#sidebar {
     grid-area: sidebar; 
     background-color: $sidebar-background-color; 
+
+    .sidebar-promo {
+      background: #c4c5fd;
+      box-shadow: inset 28px 28px 45px #7d7de4,
+                  inset -28px -28px 45px #c397d4;
+      height: 20%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+      }
+                
+    .sidebar-promo-text {
+      h3 {
+        font-size: $sidebar-promo-title;
+      }
+      h6 {
+        font-size: $sidebar-promo-text;
+      }
+    }
   }
